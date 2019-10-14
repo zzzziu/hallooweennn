@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>할로윈이 뭐야?</title>
+	<link href="https://fonts.googleapis.com/css?family=Creepster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poor+Story&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{margin: 0; font-family: 'Poor Story', cursive; }
+		section{ height: 500px; position: relative; padding: 0;}
+		img{ width: 150px; position: absolute; }
+
+		h1{ font-size: 200px; text-align: center; color: white; font-family: 'Creepster', cursive; margin: 0; padding: 150px; text-shadow: 5px 5px 5px darkgray; opacity: 0;}
+		h2{ font-family: 'Poor Story', cursive; font-size: 50px; text-align: left; color: white; margin: 0;}
+		p{font-size: 25px; text-align: left; color: white; margin: 0; padding-top: 20px; padding-bottom: 5px; 
+			line-height: 35px;}
+		.black{background: black; height: 1000px; position: relative; }
+		.backw{background: white; height: 30px;}
+		.back{background: black; height: 800px; width: 100%;}
+		.back2{background: white; height: 650px; width: 100%;}
+		.spo1{position: absolute; left: 420px; top: 445px; opacity: 0;}
+		.bone1{position: absolute; right: 700px; bottom: 490px; opacity: 0;}
+		.wi1{position: absolute; right: 560px; top: 100px; opacity: 0;}
+		.pum1{position: absolute; left: 450px; top: 280px; opacity: 0;}
+		.pum2{position: absolute; right: 500px; top: -40px; opacity: 0;}
+		.kid1{position: absolute; right: 620px; top: 40px; opacity: 0;}
+		.candy{position: absolute; left: 90px; bottom: 540px; opacity: 0;}
+		.peoz1{position: absolute; right: 590px; top: 110px; opacity: 0;}
+		.peoz2{position: absolute; left: 135px; bottom: 520px; opacity: 0; }
+		.dra1{position: absolute; right: 530px; bottom: 400px; opacity: 0;}
+
+		#s3{transition: all 1s;}
+
+		@keyframes rtol{
+			from{ left: 0px; opacity: 0.5;} 
+			to {left: 90px; opacity: 1;}
+		}	
+		@keyframes op1{
+			from{ opacity: 0;} 
+			to { opacity: 0.85;}
+		}
+		@keyframes op2{
+			from{ opacity: 0;} 
+			to { opacity: 1;}
+		}
+		@keyframes ltor1{
+			from{ right: 0px; opacity: 0.5; } 
+			to {right: 700px; opacity: 1;}		
+		}
+		@keyframes ltor2{
+			from{ right: 0px; opacity: 0.5; } 
+			to {right: 560px; opacity: 1;}		
+		}
+		@keyframes ltor3{
+			from{ left: 700px; opacity: 0.6; } 
+			to {left: 450px; opacity: 1;}		
+		}
+		@keyframes ltor4{
+			from{ right: 0px; opacity: 0.5; } 
+			to {right: 620px; opacity: 1;}		
+		}
+		@keyframes ltor5{
+			from{ right: 300px; opacity: 0; } 
+			to {right: 590px; opacity: 1;}		
+		}
+		@keyframes rtol2{
+			from{ left: 0px; opacity: 0;} 
+			to {left: 135px; opacity: 1;}
+		}	
+
+
+		.textbox1{width: 400px; background-color: black; opacity: 0; margin-left: 150px; padding: 30px;}
+		.textbox2{width: 600px; background-color: #3f3f3f; opacity: 0; margin-left: 230px; padding: 30px; position: relative; top: 100px;}
+		.textbox3{width: 600px; background-color: #3f3f3f; opacity: 0; margin-left: 290px; padding: 30px; position: relative; top: 200px; left: 200px;}
+		.textbox4{width: 400px; background-color: black; opacity: 0; margin-left: 150px; padding: 30px; position: relative; top: 120px;}
+		.textbox5{width: 600px; background-color: #3f3f3f; opacity: 0; margin-left: 230px; padding: 30px; position: relative; top: 100px;}
+		.textbox6{width: 600px; background-color: #3f3f3f; opacity: 0; margin-left: 290px; padding: 30px; position: relative; top: 200px; left: 310px;}
+		.textbox7{width: 600px; background-color: #3f3f3f; opacity: 0; margin-left: 230px; padding: 30px; position: relative; top: 100px;}
+		.textbox8{width: 600px; background-color: #3f3f3f; opacity: 0; margin-left: 290px; padding: 30px; position: relative; top: 200px; left: 310px;}
+
+		.aa{ background: url(back3.jpg); background-size: cover; background-attachment: fixed; }
+		.bb{ background: url(back2.jpg); background-size: cover; background-attachment: fixed; }
+		.cc{ background: url(back4.jpg); background-size: cover; background-attachment: fixed; }
+		.dd{ background: url(back5.jpg); background-size: cover; background-attachment: fixed; }
+		.ee{ background: url(back6.jpg); background-size: cover; background-attachment: fixed; }
+
+		#monitor{ width: 80px; height: 30px; background: black; color: white; position: fixed; top: 0; left: 0;}
+		
+	</style>
+</head>
+<body>
+	
+	<section class="black aa">
+		<img src="ghost.png" style="left: 230px; top: 100px;">
+		<img src="ghost2.png" style="right: 230px; top: 250px;">
+		<h1 id="logo">Halloween</h1>
+
+		
+		<div class="textbox1" id="t1">
+		<h2>할로윈이란?</h2>
+		<p>미국 전역에서 매년 10월 31일 유령이나 <br>괴물 분장을 하고 즐기는 축제</p>
+		</div>
+		<div class="spo1" id="i1">
+			<img src="spooky1.gif" style="width: 150px;">
+		</div>
+		
+		<div class="bone1" id="i2">
+			<img src="bone1.png" style="width: 650px;">
+		</div>
+	</section>
+
+	<section class="back bb">
+		<div class="textbox2" id="t2">
+		<h2>할로윈의 유래</h2>
+		<p>할로윈은 고대 아일랜드 켈트족의 축제에서 비롯되었다. 켈트족은 <br>
+			사람이 죽으면 그 영혼들이 1년동안 다른 사람의 몸에서 살다가 <br>떠난다고 믿었다. 1년의 마지막 날인 10월 31일 죽은 자의 영혼들이 <br>
+			자신이 1년간 머무를 사람들을 고르려 돌아다닌다고 생각했다.</p>
+		</div>
+
+		<div class="textbox3" id="t3">
+		<p>그래서 사람들은 한해의 마지막 날에 음식을 마련해 죽은 영혼을 <br>달래고 귀신을 쫓았다. 그리고 귀신들이 자신에게 들어오지 못하게 
+			<br>하기 위해서 귀신처럼 분장을 하여 귀신들이 나를 귀신으로 <br>착각하게 만들었다. </p>
+		</div>
+
+		<div class="wi1" id="i3">
+			<img src="wi1.png" style="width: 320px;">
+		</div>		
+	</section>
+
+	<div class="backw"></div>
+
+	<section class="back2 cc">
+		<div class="textbox4" id="t4">
+		<h2>잭오랜턴</h2>
+		<p>잭오랜턴은 할로윈을 대표하는 상징물로, <br>커다란 주황색 호박의 속을 패나고 <br>악마의 얼굴 모양으로 눈,코입을 도려낸 뒤 
+			<br>속에 초를 고정시킨 것이다.</p>
+		</div>
+		<div class="pum1" id="i5">
+			<img src="pum1.gif" style="width: 320px;">
+		</div>	
+		<div class="pum2" id="i4">
+			<img src="pum2.gif" style="width: 400px;">
+		</div>		
+	</section>
+
+	<section class="black dd">
+
+		<div class="textbox5" id="t5">
+		<h2>트릭 오어 트릿</h2>
+		<p>10월 31일 저녁이 되면 분장한 아이들이 집집마다 돌아다니며 <br>맛있는 것을 주지 않으면 장난을 치겟노라 으름장을 놓는다. <br>
+		이때 외치는 말이 ‘트릭 오어 트릿’이다. 아이들을 맞이한 집에서는 <br>이들의 요구대로 사탕이나 과자 등을 안겨준다. 아무 집이나 <br>찾아가는 것이 아니라 문 앞에 잭오랜턴을 밝히는 등 할로윈 <br>축제에 참여한다는 표시를 한 가정에 방문한다.</p>
+		</div>
+
+		<div class="textbox6" id="t6">
+		<h2>음식</h2>
+		<p>할로윈이 다가오면 미국의 가정에서는 커다란 호박의 속을 파내 <br>잭오랜턴을 만든다. 호박은 등불만이 아니라 축제를 위한 요리 재료<br>로도 사용되는데, 흔히 호박 파이, 호박 빵을 만들어 먹고 구운 <br>호박씨도 즐겨 먹는다. 아이들을 위해서는 사탕이나 쿠키, <br>초콜릿처럼 달콤한 간식을 준비한다.</p>
+		</div>
+
+		<div class="kid1" id="i6">
+			<img src="kid2.gif" style="width: 400px;">
+		</div>
+		<div class="candy" id="i7">
+			<img src="candy.png" style="width: 630px;">
+		</div>		
+	</section>
+
+	<div class="backw"></div>
+
+	<section class="black ee">
+
+		<div class="textbox7" id="t7">
+		<h2>분장과 가장 무도회</h2>
+		<p>할로윈이 되면 신기하고 기괴한 분장을 한 사람들이 거리를 <br>활보한다. 할로윈에 분장을 하는 것은 고대 켈트족이 한 해의 <br>마지막 10월 31일 밤, 인간 세상에 찾아오는 악령과 악마들로부터 벗어나기 위해 기이한 모습으로 변장한 풍습에서 유래한 것이다.</p>
+		</div>
+
+		<div class="textbox8" id="t8">
+		<p>미국에서 할로윈 축제는 주로 아이들을 위한 축제로 발전했는데, <br>현재는 학교나 직장 혹은 아이가 없는 가정에서도 분장 파티를 <br>여는 경우가 많다. 성인들은 흔히 전통적인 할로윈 복장 외에 <br>역사적으로 유명한 인물이나 대통령 같은 정치인, 인기인의 가면을 쓰고 차려 입고서 가장 무도회에 참석한다.</p>
+		</div>
+
+		<div class="peoz1" id="i8">
+			<img src="peoz1.png" style="width: 520px;">
+		</div>
+		<div class=peoz2 id="i9">
+			<img src="peoz2.png" style="width: 520px;">
+		</div>
+		<div class=dra1 id="i10">
+			<img src="dra1.gif" style="width: 400px;">
+		</div>		
+	</section>
+
+	<div id="monitor"></div>
+
+	<script type="text/javascript">
+		window.onscroll = function(){
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+		monitor.innerHTML = t;
+			if(t > 2){logo.style.animation = "op2 1s forwards";}
+			else{logo.style.animation = ""; }
+			if(t > 30){t1.style.animation = "op1 1s forwards";}
+			else{t1.style.animation = ""; }
+			if(t > 30){i1.style.animation = "op1 1s forwards";}
+			else{i1.style.animation = ""; }
+			if(t > 195){i2.style.animation = "ltor1 1s forwards";}
+			else{i2.style.animation = ""; }
+
+			if(t > 450){t2.style.animation = "op1 1s forwards";}
+			else{t2.style.animation = ""; }
+			if(t > 655){i3.style.animation = "ltor2 1s forwards";}
+			else{i3.style.animation = ""; }
+			if(t > 820){t3.style.animation = "op1 1s forwards";}
+			else{t3.style.animation = ""; }
+			
+			if(t > 1330){t4.style.animation = "op1 1s forwards";}
+			else{t4.style.animation = ""; }
+			if(t > 1380){i4.style.animation = "op2 1s forwards";}
+			else{i4.style.animation = ""; }
+			if(t > 1570){i5.style.animation = "ltor3 1s forwards";}
+			else{i5.style.animation = ""; }
+
+			if(t > 1890){t5.style.animation = "op1 1s forwards";}
+			else{t5.style.animation = ""; }
+			if(t > 2050){i6.style.animation = "ltor4 1s forwards";}
+			else{i6.style.animation = ""; }
+			if(t > 2545){i7.style.animation = "rtol 1s forwards";}
+			else{i7.style.animation = ""; }
+			if(t > 2600){t6.style.animation = "op1 1s forwards";}
+			else{t6.style.animation = ""; }
+
+			if(t > 3060){t7.style.animation = "op1 1s forwards";}
+			else{t7.style.animation = ""; }
+			if(t > 3200){i8.style.animation = "ltor5 1s forwards";}
+			else{i8.style.animation = ""; }
+			if(t > 3360){i9.style.animation = "rtol2 1s forwards";}
+			else{i9.style.animation = ""; }
+			if(t > 3480){t8.style.animation = "op1 1s forwards";}
+			else{t8.style.animation = ""; }
+			if(t > 3570){i10.style.animation = "op2 1s forwards";}
+			else{i10.style.animation = ""; }
+		}
+	</script>
+
+</body>
+</html>
